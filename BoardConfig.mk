@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +26,4 @@ TARGET_KERNEL_CONFIG := custom_p3110_defconfig
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := p3110,GT-P3110,p3113,GT-P3113,espressowifi,espressowifixx
-
-# TWRP (more in BoardCommonConfig.mk)
-DEVICE_RESOLUTION := 1024x600
 

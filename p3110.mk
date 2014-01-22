@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,11 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espressowifi \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
-
-# Packages
-PRODUCT_PACKAGES += \
-    SamsungServiceMode \
-    OmniGears
 
 # IR packages
 PRODUCT_PACKAGES += \
