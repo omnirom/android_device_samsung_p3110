@@ -15,22 +15,23 @@
 # limitations under the License.
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := p3110
-
-# Inherit some common Omni stuff.
+# Inherit common Omni configurations
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/p3110/full_p3110.mk)
+# Inherit device specific configurations
+$(call inherit-product, device/samsung/p3110/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := p3110
-PRODUCT_NAME := omni_p3110
-PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P3110
+PRODUCT_BRAND := samsung
+PRODUCT_NAME := omni_p3110
+PRODUCT_DEVICE := p3110
 PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=espressowifixx TARGET_DEVICE=espressowifi BUILD_FINGERPRINT=samsung/espressowifixx/espressowifi:4.0.3/IML74K/P3110XWALD2:user/release-keys PRIVATE_BUILD_DESC="espressowifixx-user 4.0.3 IML74K P3110XWALD2 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=espressowifixx \
+    TARGET_DEVICE=espressowifi \
+    PRIVATE_BUILD_DESC="espressowifixx-user 4.2.2 JDQ39 P3110XXDMH1 release-keys" \
+    BUILD_FINGERPRINT="samsung/espressowifixx/espressowifi:4.2.2/JDQ39/P3110XXDMH1:user/release-keys"
 
