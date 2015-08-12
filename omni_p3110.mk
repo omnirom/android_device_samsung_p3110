@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/p3110/device.mk)
 
 # OmniRom specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p3100/overlay/custom-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_MODEL := GT-P3110
@@ -43,4 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=espressowifi \
     PRIVATE_BUILD_DESC="espressowifixx-user 4.2.2 JDQ39 P3110XXDMH1 release-keys" \
     BUILD_FINGERPRINT="samsung/espressowifixx/espressowifi:4.2.2/JDQ39/P3110XXDMH1:user/release-keys"
-
