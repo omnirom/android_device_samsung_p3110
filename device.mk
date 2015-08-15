@@ -19,7 +19,7 @@ $(call inherit-product, device/samsung/p3100/p31xx-common.mk)
 
 LOCAL_PATH := device/samsung/p3110
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p3110/overlay/aosp
 
 # Audio
 PRODUCT_COPY_FILES += \
