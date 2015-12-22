@@ -1,12 +1,6 @@
 [
   {
     "remote": "omnirom",
-    "repository": "android_device_samsung_p3100",
-    "target_path": "device/samsung/p3100",
-    "revision": "android-5.1"
-  },
-  {
-    "remote": "omnirom",
     "repository": "android_device_samsung_espresso-common",
     "target_path": "device/samsung/espresso-common",
     "revision": "android-5.1"

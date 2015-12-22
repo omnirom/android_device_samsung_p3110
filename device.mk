@@ -15,11 +15,13 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/p3100/p31xx-common.mk)
+# Include espresso-common makefile
+$(call inherit-product, device/samsung/espresso-common/espresso-common.mk)
 
 LOCAL_PATH := device/samsung/p3110
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay/aosp
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-p31xx
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -35,3 +37,4 @@ PRODUCT_COPY_FILES += \
 
 # Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/samsung/p31xx/p3110-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p31xx/p31xx-vendor.mk)
