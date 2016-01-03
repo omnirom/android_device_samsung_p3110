@@ -16,4 +16,5 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_p3110.mk \
     $(LOCAL_DIR)/omni_p3110.mk
