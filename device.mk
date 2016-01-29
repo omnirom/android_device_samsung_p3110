@@ -24,7 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/p3110/overlay/aosp
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espressowifi \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # IR packages
