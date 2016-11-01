@@ -22,6 +22,7 @@ TARGET_BOOTANIMATION_SIZE := 480x320
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # OmniRom specific overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p3110/overlay/custom
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
 
 # Inherit device specific configuration
